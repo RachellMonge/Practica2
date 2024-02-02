@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <link href="css/diseño.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="sesion.html"></a>
+                <h2 style="text-align: center; background-color: #ffffff; color: #ff9933;">DeliRecipes</h2>
+            </nav>
+        </header>
+        <aside class="aside">
+            <h2 style="text-align: left; background-color: #ffffff; color: #ff9933;">Registrarse</h2>
+        </aside>
+        <form>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Nombre</td>
+                        <td><input type="text" name="nombre" placeholder="Nombre"
+                                   size="40"/></td>
+                    </tr>
+                    <tr>
+                        <td>Apellido</td>
+                        <td><input type="text" name="apellido" placeholder="Apellido"
+                                   size="40"/></td>
+                    </tr>
+                    <tr>
+                        <td>Cedula</td>
+                        <td><input type="tel" name="cedula
+                                   size="8"/></td>
+                    </tr>
+                    <tr>
+                        <td>Dirección</td>
+                        <td><textarea name="dirección" rows="4" cols="25"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Correo electronico</td>
+                        <td><input type="email" id="email" pattern=".+@example\.com" size="30" required/>
+                    </tr>
+                    <tr>
+                        <td>Contraseña</td>
+                        <td><input type="password" name="contreña"
+                                   size="10"/></td>
+                    </tr>
+                    <tr>
+                        <td>Confirmar Contraseña</td>
+                        <td><input type="password" name="conficontreña"
+                                   size="10"/></td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de nacimiento</td>
+                        <td><input type="date" asp-format="{0:yyyy-MM-dd}" asp-for="FechaNac" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Registrarse"/></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
